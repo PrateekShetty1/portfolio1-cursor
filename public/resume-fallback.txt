@@ -1,0 +1,61 @@
+Prateek Shetty 
+prateeknshetty@gmail.com | LinkedIn | (857) 891-2464 | GitHub | Boston, MA 
+SUMMARY 
+Product manager with proven experience developing user-centric solutions and driving cross-functional collaboration. Expertise in market 
+research,  product  strategy,  and  data-driven  decision  making.  Skilled at translating customer  needs into compelling  features  that  increase 
+engagement, retention, and business value. 
+EDUCATION 
+NORTHEASTERN UNIVERSITY                                                                                                                                                Boston, MA 
+Master of Science in Engineering Management | GPA: 3.8                                                                                                                        
+      Relevant coursework: Digital Product Design & Management, Engineering Project Management, Customer-driven Innovation 
+M. S. RAMAIAH INSTITUTE OF TECHNOLOGY                                                                                                          Bengaluru, India              
+Bachelor of Engineering in Mechanical Engineering                                                                                                                         
+PROFESSIONAL EXPERIENCE 
+BOSCH HOME COMFORT                                                                                                                                       Watertown, Massachusetts 
+Product Manager                                                                                                                                                                Apr 2024 - Dec 2024 
+▪ Conducted user research with 40+ customers, created journey maps & performed market analysis, identifying critical pain points that 
+informed product enhancements and increased user engagement by 20% 
+▪ Defined product requirements, epics, and user stories, ensuring features align with customer needs and business goals  
+▪ Led end-to-end development of digital and hardware product roadmaps, using data-driven prioritization to accelerate time-to-market  
+▪ Collaborated cross-functionally with engineering, R&D, sales, & marketing to translate user needs into scalable, user-friendly solutions  
+▪ Analyzed product development metrics via custom dashboards, identifying bottlenecks that reduced development cycle time by 15% 
+▪ Built market intelligence databases & analytics dashboards tracking 12 competitors & 15 KPIs, enabling data-driven product positioning  
+▪ Led  HVAC  smart  product  development  ($1.5M  first-year  revenue  potential),  orchestrating  product  design,  feature  roadmap,  user 
+experience & GTM strategy for successful market launch 
+▪ Conducted risk assessments for 4 product lines, identifying compliance requirements early to reduce regulatory approval delays by 20% 
+DELL TECHNOLOGIES                                                                                                                                                       Bengaluru, India 
+Account Manager                                                                                                                                                               Jan 2022 - Aug 2023 
+▪ Developed and implemented data-driven sales strategies, leading to a 10% YoY revenue increase  
+▪ Owned end-to-end product lifecycle management, streamlining go-to-market strategies and improving customer acquisition  
+▪ Created customer segmentation strategy for SMB clients, identifying key opportunities that increased conversion rates by 15% 
+▪ Collaborated with product teams to influence roadmap decisions based on customer feedback and market needs 
+BYJU'S - The learning App                                                                                                                                                    Bengaluru, India 
+Product Specialist                                                                                                                                                                Jan 2020 - Jan 2021 
+▪ Executed A/B testing strategy for digital user experience, refining features & improving customer satisfaction (CSAT) from 6.5 to 8.0 
+▪ Led cross-functional initiatives to streamline Agile product development, reducing time-to-market by 10%  
+▪ Identified conversion bottlenecks through funnel analysis, implementing UX improvements that increased conversion rates by 15% 
+▪ Collaborated with engineering teams to prioritize feature development based on user engagement, reducing development cycles by 12% 
+
+PROJECTS 
+SenSights – AI-Powered User Feedback Tool for Product Managers | Independent Project | Product MVP                             Apr 2025   
+▪ Developed user-centric solution for collecting and analyzing customer feedback across digital platforms 
+▪ Created features enabling businesses to identify sentiment trends and prioritize product improvements 
+▪ Built analytics dashboard that accelerated insight-to-action cycles by 40%, helping businesses respond faster to customer needs  
+Budget Buddy - Financial Management Platform                                                                                                                             Mar 2025 
+▪ Led development of consumer app based on research with 150+ users, prioritizing features that addressed core pain points 
+▪ Implemented user engagement framework with clear metrics to track adoption, retention, and feature usage 
+▪ Created product specs and user stories that guided cross-functional development team to successful MVP launch 
+Digital Health & AI Product Strategy for Uber Drivers | Hackathon Winner - Final Pitch Deck                                            Nov 2023  
+▪ Designed an AI-powered wellness platform, leveraging user insights to improve driver stress management 
+▪ Conducted extensive user research to define problem statements and prioritize features based on data-driven insights 
+▪ Developed success metrics for adoption, retention, and behavioral impact, ensuring a scalable and impactful product solution 
+SKILLS 
+Product  Management: Feature  prioritization,  roadmap development,  A/B  testing,  product  requirements,  cross-functional  collaboration, 
+user research, market analysis, international product adaptation, Key Performance Indicators, competitor analysis, GTM Strategy 
+Technical: Python, SQL, Power BI, Tableau, Figma, MS Office Suite, Excel (Pivot Tables, VBA), JIRA, Salesforce 
+Analytics: Funnel analysis, conversion optimization, statistical analysis, user behavior tracking, data visualization 
+LEADERSHIP AND COMMUNITY 
+Associate VP – Northstar, Aspiring Product Managers Club, Northeastern University                                         Aug 2023 - Dec 2023 
+▪ Organized workshops for 100+ members, focusing on product management frameworks, data analytics, & strategy development 
+▪ Led a team of aspiring product managers, enhancing skill development through hands-on training & real-world case studies 
+CERTIFICATIONS: Atlassian Agile Project Management - April 2025 || Aha! Professional Product Management - May 2025
