@@ -1,83 +1,92 @@
 "use client"
 
+import { useState } from "react"
 import Image from "next/image"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowRight } from "lucide-react"
-import { motion } from "framer-motion"
+import Link from "next/link"
+import { motion, AnimatePresence } from "framer-motion"
+import { ChevronDown } from "lucide-react"
 
-interface ProjectProps {
+interface Project {
   id: number
   title: string
+  subtitle: string
   description: string
   imageSrc: string
-  content: string
   tags: string[]
-  link: string
+  links?: Array<{ url: string; text: string }>
+  metrics?: Array<{ value: string; label: string }>
 }
 
-export function ProjectCard({ project }: { project: ProjectProps }) {
+export function ProjectCard({ project }: { project: Project }) {
+  const [isExpanded, setIsExpanded] = useState(false)
+
   return (
-    <motion.div whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 300 }} className="h-full">
-      <Card className="flex flex-col h-full border-amber-200 overflow-hidden hover:shadow-xl transition-all duration-300">
-        <CardHeader className="bg-gradient-to-r from-amber-100 to-amber-50">
-          <CardTitle className="text-amber-900">{project.title}</CardTitle>
-          <CardDescription className="text-amber-700">{project.description}</CardDescription>
-        </CardHeader>
-        <CardContent className="flex-1 pt-6">
-          <motion.div
-            className="aspect-video relative mb-4 rounded-md overflow-hidden border border-amber-200"
-            whileHover={{ scale: 1.02 }}
-            transition={{ type: "spring", stiffness: 400 }}
-          >
-            <Image
-              src={project.imageSrc || "/placeholder.svg"}
-              alt={project.title}
-              fill
-              className={`object-cover transition-transform hover:scale-105 duration-500 ${
-                project.title.includes("Uber") ? "object-contain bg-black p-0" : ""
-              }`}
-              priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement
-                target.src = "/placeholder.svg?height=400&width=600"
-              }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-amber-900/30 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <motion.button
-                className="bg-amber-600 text-white px-4 py-2 rounded-md font-medium"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => window.open(project.link, "_blank")}
+    <motion.div
+      className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+      whileHover={{ y: -4 }}
+      transition={{ duration: 0.2 }}
+    >
+      <div className="relative aspect-video overflow-hidden group">
+        <Image
+          src={project.imageSrc}
+          alt={project.title}
+          width={400}
+          height={225}
+          className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <div className="flex gap-2">
+            {project.tags.map((tag, index) => (
+              <span
+                key={index}
+                className="px-2 py-1 text-xs font-medium text-white bg-black/30 backdrop-blur-sm rounded-full"
               >
-                View Project
-              </motion.button>
-            </div>
-          </motion.div>
-          <div className="space-y-2">
-            <p className="text-amber-800">{project.content}</p>
-            <div className="flex flex-wrap gap-2 mt-4">
-              {project.tags.map((tag, index) => (
-                <Badge
-                  key={index}
-                  variant="outline"
-                  className="border-amber-300 text-amber-700 hover:bg-amber-100 transition-colors"
-                >
-                  {tag}
-                </Badge>
-              ))}
-            </div>
-            <motion.a
-              href={project.link}
-              className="inline-flex items-center mt-4 text-amber-600 hover:text-amber-800 transition-colors group"
-              whileHover={{ x: 3 }}
-            >
-              Learn more <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </motion.a>
+                {tag}
+              </span>
+            ))}
           </div>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{project.title}</h3>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">{project.subtitle}</p>
+        <div className="mt-4">
+          <AnimatePresence>
+            <motion.p
+              className={`text-gray-700 dark:text-gray-300 text-sm ${isExpanded ? '' : 'line-clamp-3'}`}
+              initial={false}
+              animate={{ height: isExpanded ? 'auto' : '4.5em' }}
+              transition={{ duration: 0.3 }}
+            >
+              {project.description}
+            </motion.p>
+          </AnimatePresence>
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="mt-2 text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 flex items-center gap-1"
+          >
+            {isExpanded ? 'Show less' : 'Read more'}
+            <ChevronDown
+              className={`h-4 w-4 transform transition-transform ${isExpanded ? 'rotate-180' : ''}`}
+            />
+          </button>
+        </div>
+        {project.links && project.links.length > 0 && (
+          <div className="mt-6 flex gap-4">
+            {project.links.map((link, index) => (
+              <Link
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+              >
+                {link.text}
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
     </motion.div>
   )
 }

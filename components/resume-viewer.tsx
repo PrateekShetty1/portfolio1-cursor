@@ -8,8 +8,8 @@ export function ResumeViewer({ onClose }: { onClose: () => void }) {
   const downloadResume = () => {
     // Create a link to download the PDF
     const link = document.createElement("a")
-    link.href = "/Prateek_Shetty_Resume.pdf"
-    link.download = "Prateek_Shetty_Resume.pdf"
+    link.href = "/Prateek Shetty-Resume.pdf"
+    link.download = "Prateek Shetty-Resume.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -44,7 +44,7 @@ export function ResumeViewer({ onClose }: { onClose: () => void }) {
 
         <div className="flex-1 w-full h-full min-h-[70vh] overflow-auto p-4">
           <iframe
-            src="/Prateek_Shetty_Resume.pdf"
+            src="/Prateek Shetty-Resume.pdf"
             className="w-full h-full min-h-[70vh] rounded-md border border-amber-200"
             title="Prateek Shetty Resume"
           />
