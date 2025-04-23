@@ -1,13 +1,13 @@
 "use client"
 
 import * as React from "react"
-import { Navigation } from "../components/navigation"
-import { ProjectCard } from "../components/project-card"
+import { Navigation } from "@/components/navigation"
+import { ProjectCard } from "@/components/project-card"
 import { motion } from "framer-motion"
 import { Github, Linkedin, Mail, MapPin, ChevronLeft, ChevronRight, X, MessageSquare } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
-import { ThemeToggle } from "../components/theme-toggle"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 type Project = {
   id: number;
