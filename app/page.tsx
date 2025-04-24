@@ -527,13 +527,13 @@ export default function Home() {
               <div className="prose dark:prose-invert order-2 md:order-1">
                 <div className="space-y-4">
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-                    I am a Product Manager with a passion for building innovative solutions that make a real difference. With over 5 years of experience in product management and software development, I specialize in leading cross-functional teams to deliver impactful products that solve complex business challenges.
+                    Data-driven and user-obsessed Product Manager with a Master's in Engineering Management from Northeastern University and a track record of delivering high-impact products across global teams. I specialize in turning customer insights into actionable product strategies, defining clear roadmaps, and leading cross-functional execution from ideation to launch.
                   </p>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-                    My expertise lies in strategic product planning, user-centered design, and data-driven decision making. I have successfully launched multiple products from conception to market, consistently achieving key business objectives while maintaining a strong focus on user experience.
+                    With experience at Bosch, Dell, and BYJU'S, I've worked across hardware and digital ecosystems — conducting user research, writing detailed PRDs, building GTM plans, and optimizing features based on product analytics. My product decisions are grounded in user empathy, structured frameworks, and measurable outcomes.
                   </p>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-                    Currently, I am focused on leveraging emerging technologies like AI and machine learning to create innovative solutions that enhance user experiences and drive business growth.
+                    I thrive in fast-paced environments, excel at stakeholder collaboration, and am passionate about building intuitive, scalable solutions that solve real user problems.
                   </p>
                 </div>
               </div>
