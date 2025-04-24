@@ -20,6 +20,11 @@ interface Project {
 export function ProjectCard({ project }: { project: Project }) {
   const [isExpanded, setIsExpanded] = useState(false)
 
+  // Return null if project is undefined
+  if (!project) {
+    return null;
+  }
+
   return (
     <motion.div
       className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
