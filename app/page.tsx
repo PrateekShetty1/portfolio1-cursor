@@ -25,9 +25,10 @@ type Project = {
 
 const navItems = [
   { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
+  { href: '#experience', label: 'Work' },
   { href: '#projects', label: 'Projects' },
-  { href: '#experience', label: 'Experience' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#certifications', label: 'Certifications' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -144,7 +145,7 @@ const navItems = [
     tags: ["E-commerce", "Data Analytics", "Sales Strategy", "Revenue Growth"],
     links: [
       {
-        url: "/pdfs/PNS project.pdf",
+        url: "/pdfs/PNS Project.pdf",
         text: "View Project"
       }
     ],
