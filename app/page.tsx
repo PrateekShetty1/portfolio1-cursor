@@ -37,7 +37,7 @@ const navItems = [
       id: 1,
     title: "SenSights.AI",
     subtitle: "AI-Powered User Feedback Tool",
-    description: "Led development of an innovative AI system for collecting and analyzing customer feedback across digital platforms. Implemented machine learning algorithms for sentiment analysis and feature prioritization.",
+    description: "Built a real-world, AI-powered tool to streamline user feedback analysis, leveraging LLMs (like OpenAI's API) to synthesize customer surveys, feature requests, and sentiments into clear, actionable insights — enabling product managers and teams to move from raw feedback to strategic decisions faster.",
       imageSrc: "/images/sensights.png",
       tags: ["AI Integration", "Product Analytics", "UX Research", "API Development"],
     links: [
@@ -58,9 +58,9 @@ const navItems = [
     },
     {
       id: 2,
-    title: "AI-Driven Strategy for Uber Drivers",
-    subtitle: "Intelligent Route Optimization",
-    description: "Developed an AI-powered system to optimize driver routes and earnings. Leveraged historical data and real-time analytics to provide strategic insights for maximizing driver efficiency and revenue.",
+    title: "Uber Care",
+    subtitle: "AI Wellness Platform for Uber Drivers",
+    description: "Built a real-world, AI-driven mental wellness platform during Protothon 4.0 to support Uber drivers by providing personalized mindfulness exercises, real-time stress management tools, and direct access to support services — addressing mental health challenges with empathy-driven technology solutions.",
       imageSrc: "/images/uber-project.png",
       tags: ["Product Strategy", "User Research", "Figma", "AI"],
     links: [
