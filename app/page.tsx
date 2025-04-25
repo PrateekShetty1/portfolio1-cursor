@@ -239,7 +239,7 @@ const skills = [
   },
     {
       title: "Product Manager",
-      company: "Bosch Home Comfort",
+      company: "Robert Bosch",
       period: "Apr 2024 - Dec 2024",
       duration: "8 months",
     logo: "/images/companies/Bosch_Logo.jpg",
