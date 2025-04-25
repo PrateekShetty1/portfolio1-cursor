@@ -36,8 +36,8 @@ const navItems = [
     {
       id: 1,
     title: "SenSights.AI",
-    subtitle: "AI-Powered Fall Detection & Prevention",
-    description: "Led development of an innovative AI system for elderly care, integrating fall detection, prevention, and health monitoring. Implemented machine learning algorithms for real-time analysis and predictive insights.",
+    subtitle: "AI-Powered User Feedback Tool",
+    description: "Led development of an innovative AI system for collecting and analyzing customer feedback across digital platforms. Implemented machine learning algorithms for sentiment analysis and feature prioritization.",
       imageSrc: "/images/sensights.png",
       tags: ["AI Integration", "Product Analytics", "UX Research", "API Development"],
     links: [
