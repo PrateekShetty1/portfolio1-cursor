@@ -225,6 +225,21 @@ const skills = [
 
   const experiences = [
   {
+    title: "Product Manager",
+    company: "Robert Bosch",
+    period: "Apr 2024 - Dec 2024",
+    duration: "8 months",
+    logo: "/images/companies/Bosch_Logo.jpg",
+    responsibilities: [
+      "Conducted user research with 40+ customers, created journey maps & performed market analysis, identifying critical pain points that informed product enhancements and increased user engagement by 20%",
+      "Defined product requirements, epics, and user stories, ensuring features align with customer needs and business goals",
+      "Led end-to-end development of digital and hardware product roadmaps, using data-driven prioritization to accelerate time-to-market",
+      "Collaborated cross-functionally with engineering, R&D, sales, & marketing to translate user needs into scalable, user-friendly solutions",
+      "Analyzed product development metrics via custom dashboards, identifying bottlenecks that reduced development cycle time by 15%",
+      "Built market intelligence databases & analytics dashboards tracking 12 competitors & 15 KPIs, enabling data-driven product positioning"
+    ]
+  },
+  {
     title: "Graduate Teaching Assistant - Digital Product Management",
     company: "Northeastern University",
     period: "Jan 2025 - Present",
@@ -237,21 +252,6 @@ const skills = [
       "Evaluated student projects, offering strategic feedback to enhance their understanding of customer-centric product development"
     ]
   },
-    {
-      title: "Product Manager",
-      company: "Robert Bosch",
-      period: "Apr 2024 - Dec 2024",
-      duration: "8 months",
-    logo: "/images/companies/Bosch_Logo.jpg",
-      responsibilities: [
-        "Conducted user research with 40+ customers, created journey maps & performed market analysis, identifying critical pain points that informed product enhancements and increased user engagement by 20%",
-        "Defined product requirements, epics, and user stories, ensuring features align with customer needs and business goals",
-        "Led end-to-end development of digital and hardware product roadmaps, using data-driven prioritization to accelerate time-to-market",
-        "Collaborated cross-functionally with engineering, R&D, sales, & marketing to translate user needs into scalable, user-friendly solutions",
-        "Analyzed product development metrics via custom dashboards, identifying bottlenecks that reduced development cycle time by 15%",
-      "Built market intelligence databases & analytics dashboards tracking 12 competitors & 15 KPIs, enabling data-driven product positioning"
-    ]
-    },
     {
       title: "Account Manager",
       company: "Dell Technologies",
@@ -589,7 +589,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8 text-center md:text-left">Work Experience</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8 text-center md:text-left">Professional Experience</h2>
             <div className="mt-8 space-y-6">
             {experiences.map((experience, index) => (
                 <motion.div
@@ -605,7 +605,7 @@ export default function Home() {
                   
                   <div className="flex flex-col md:flex-row justify-between items-start gap-4">
                     <div className="flex items-center gap-4">
-                      <div className="relative w-12 h-12 flex-shrink-0">
+                      <div className="relative w-12 h-12">
                         <Image
                           src={experience.logo}
                           alt={`${experience.company} logo`}
